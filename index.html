@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Cameroun</title>
+  <style>
+    body {
+      background-color:white; /* Sets the background color of the body to black */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; /* Aligns flag and text in a vertical column */
+      height: 100vh;
+      margin: 0;
+
+      .Cameroon {
+      color: black; /* White text color */
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      text-align: center; /* Centers the text */
+    }
+    }
+
+    /* Flag container */
+    .flag {
+      display: flex;
+      width: 450px;
+      height: 300px;
+      border: 2px solid black; /* Optional border around the flag */
+      margin-bottom: 20px; /* Adds space between the flag and the text */
+    }
+    /* Green stripe */
+    .green-stripe {
+      background-color: #007a33; /* Green */
+      width: 33.33%; /* One-third of the flag width */
+    }
+
+    .red-stripe {
+      background-color: #ce1126; /* Red */
+      width: 33.33%;
+      position: relative; /* Used for positioning the star */
+    }
+
+    /* Yellow stripe */
+    .yellow-stripe {
+      background-color: #fcd116; /* Yellow */
+      width: 33.33%;
+    }
+
+    /* Star in the red stripe */
+    .star {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background-color: #fcd116; /* Gold color */
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+  
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="Cameroon">  
+    <p> Le Cameroun, c'est le Cameroun. <br />
+       Très difficile à comprendre, mais bon, c'est mon pays. <br />
+
+      </p>
+  </div>
+
+  <div class="flag">
+    <div class="green-stripe"></div>
+    <div class="red-stripe">
+      <div class="star"></div>
+    </div>
+    <div class="yellow-stripe"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 All Rights Reserved. Designed by Eric Chamberlin.</p>
+  </footer>
+  
+
+</body>
+
+</html>
